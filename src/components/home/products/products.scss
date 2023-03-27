@@ -1,0 +1,25 @@
+@import "../../../assets/scss_styles/global-imports";
+
+.products {
+   .motto {
+      @include flex-center-column;
+
+
+      .motto-title {
+         width: fit-content;
+         background: $color_black;
+         color: $color_white;
+         text-align: center;
+      }
+
+      .border-line {
+         background: $color_black;
+         height: 1px;
+      }
+
+      .motto-text {
+         color: $color_gray;
+         text-align: center;
+      }
+   }
+}

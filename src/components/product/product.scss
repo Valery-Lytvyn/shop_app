@@ -1,0 +1,122 @@
+@import '../../assets/scss_styles/global-imports';
+
+.product {
+   border: none;
+   position: relative;
+
+   .product-img-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+
+
+      .details-image {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .sale-label {
+         position: absolute;
+         top: 0.9375rem;
+         right: 0px;
+         background: $color_black;
+         color: $color_white;
+      }
+   }
+
+   .product-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+      .product-title {
+         font-size: 2.5rem;
+         font-weight: 700;
+
+         @include _768 {
+            font-size: 1.5rem;
+            font-weight: 600;
+         }
+      }
+
+      .price {
+         display: flex;
+         font-size: 1.5rem;
+         line-height: 1.5rem;
+
+         @include _768 {
+            font-size: 1.2rem;
+         }
+
+         .old-price {
+            text-decoration: line-through;
+            color: $color_gray;
+            font-weight: 200;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+
+            @include _768 {
+               font-size: 1rem;
+            }
+         }
+
+         .new-price {
+            font-weight: 600;
+         }
+      }
+
+      .product-cart-part {
+         display: flex;
+
+         @include _576 {
+            flex-direction: column;
+         }
+
+         .quantity-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $color_gray;
+            @include border($color_light_gray);
+
+
+            .quantity-counter {
+               @include flex-center;
+               color: $color_gray;
+               font-weight: 600;
+
+               .decrement-btn,
+               .increment-btn {
+                  font-size: 1.125rem;
+                  height: 1.75rem;
+                  color: $color_gray;
+                  font-weight: 600;
+                  font-size: small;
+                  @include border($color_light_gray);
+                  background: $color_white;
+                  @include flex-center;
+               }
+            }
+         }
+
+         .add-btn {
+            border: none;
+            background: $color_black;
+            color: $color_white;
+         }
+      }
+
+      .category {
+         display: flex;
+         color: $color_gray;
+
+         .category-text {
+            font-weight: 600;
+            text-transform: capitalize;
+         }
+      }
+   }
+}

@@ -1,0 +1,10 @@
+@import "../../../assets/scss_styles/global-imports";
+
+.navItem {
+   color: $color_black;
+   text-decoration: none;
+
+   &:hover {
+      color: $color_gray;
+   }
+}

@@ -1,0 +1,5 @@
+@import "../../assets/scss_styles/global-imports";
+
+.home {
+   @include font($body_font, 1.375rem, $color_black, 400, 1.5rem);
+}

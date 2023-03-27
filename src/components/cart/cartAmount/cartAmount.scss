@@ -1,0 +1,40 @@
+@import "../../../assets/scss_styles/global-imports";
+
+.cart-amount {
+   background: #fafafa;
+   color: $color_black;
+   height: 100%;
+
+   .cart-amount-subtotal,
+   .cart-amount-shipping,
+   .cart-amount-total {
+      display: flex;
+
+      .text-sum {
+         font-size: 1.25rem;
+         line-height: 1.75rem;
+         font-weight: 700;
+      }
+
+      .shipping-text {
+         font-size: 1.1rem;
+         font-weight: 600;
+      }
+   }
+
+   .cart-amount-total {
+      justify-content: space-between;
+      border-top: 1px solid $color_black;
+   }
+
+   .checkout-btn {
+      background: $color_black;
+      color: $color_white;
+      @include flex-center;
+
+      &:hover {
+         background: $color_gray;
+         transition-duration: 300ms;
+      }
+   }
+}

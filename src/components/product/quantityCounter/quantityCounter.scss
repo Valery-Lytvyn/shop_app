@@ -1,0 +1,19 @@
+@import "../../../assets/scss_styles/global-imports";
+
+.quantity-counter {
+   @include flex-center;
+   color: $color_gray;
+   font-weight: 600;
+
+   .decrement-btn,
+   .increment-btn {
+      font-size: 1.125rem;
+      height: 1.75rem;
+      color: $color_gray;
+      font-weight: 600;
+      font-size: small;
+      @include border($color_light_gray);
+      background: $color_white;
+      @include flex-center;
+   }
+}

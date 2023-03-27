@@ -1,0 +1,113 @@
+@import '../../../../assets/scss_styles/global-imports';
+
+.product-card {
+   @include border($color_gray);
+   height: 100%;
+   position: relative;
+   @include flex-column;
+   justify-content: space-between;
+
+   .sale-label {
+      position: absolute;
+      top: 0.9375rem;
+      right: 0px;
+      background: $color_black;
+      color: $color_white;
+   }
+
+   .product-img-wrap {
+      @include size_element($h, $w);
+      overflow: hidden;
+
+
+
+      .product-img {
+         @include size_element($h, $w);
+         object-fit: cover;
+
+         &:hover {
+            transform: scale(1.1);
+            transition-duration: 500ms;
+         }
+      }
+   }
+
+   .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 5rem;
+      max-height: 5rem;
+
+
+      .card-body-row {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         font-size: 0.875rem;
+         width: 100%;
+
+
+         .card-title-wrap {
+            width: auto;
+            overflow: hidden;
+
+            .card-title {
+               font-weight: 700;
+               text-align: start;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
+            }
+         }
+
+         .price-wrap {
+            display: flex;
+            justify-content: end;
+            position: relative;
+            overflow: hidden;
+            min-width: 6.25rem;
+
+
+            &:hover .price {
+               transform: translateX(6.875rem);
+               transition-duration: 1000ms;
+            }
+
+            &:hover .hidden-text {
+               transform: translateX(0px);
+               transition-duration: 1000ms;
+            }
+
+            .price {
+               display: flex;
+
+
+               .old-price {
+                  text-decoration: line-through;
+                  color: $color_gray;
+                  font-weight: 500;
+               }
+
+               .new-price {
+                  font-weight: 700;
+               }
+            }
+
+            .hidden-text {
+               color: $color_gray;
+               cursor: pointer;
+               position: absolute;
+               left: 0;
+               z-index: 50;
+               width: 100%;
+               transform: translateX(-6.875rem);
+            }
+         }
+      }
+
+      .product-category {
+         font-size: 1rem;
+      }
+   }
+}

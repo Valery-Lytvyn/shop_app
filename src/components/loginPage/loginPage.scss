@@ -1,0 +1,33 @@
+@import "../../assets/scss_styles/global-imports";
+
+.login-page {
+   flex: 1;
+   @include flex-center;
+
+   @include _450 {
+      @include flex-center-column;
+   }
+
+   .login-btn {
+      background: transparent;
+      @include border($color_gray);
+      border-radius: 0.3rem;
+      font-size: 1.1rem;
+
+      svg {
+         font-size: 1.9rem;
+      }
+
+      &:hover {
+         @include border(#2563eb);
+         transition-duration: 3000ms;
+      }
+   }
+
+   .Sign-out-btn {
+      font-size: 1.1rem;
+      background-color: $color_black;
+      border-radius: 0.3rem;
+      color: $color_white;
+   }
+}

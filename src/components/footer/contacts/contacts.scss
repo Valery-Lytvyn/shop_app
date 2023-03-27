@@ -1,0 +1,14 @@
+@import "../../../assets/scss_styles/variables";
+
+.contacts {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 100%;
+
+
+   .contacts-title {
+      color: $color_white;
+      font-size: 1.625rem;
+   }
+}

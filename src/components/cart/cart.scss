@@ -1,0 +1,42 @@
+@import "../../assets/scss_styles/global-imports";
+
+.cart {
+   flex: 1;
+   font-family: $title_font;
+
+   .reset-button-wrap {
+      @include flex-center;
+
+      .reset-button {
+         background: #fca5a5;
+         border: none;
+         color: $color_white;
+
+         &:hover {
+            background: #991b1b;
+            transition-duration: 300ms;
+         }
+      }
+   }
+
+   .home-link {
+      display: flex;
+      align-items: center;
+      color: $color_gray;
+      text-decoration: none;
+
+      &:hover {
+         color: $color_black;
+         transition-duration: 300ms;
+      }
+   }
+
+   a {
+      text-decoration: none;
+   }
+
+   .empty-cart-message {
+      @include flex-center;
+      color: #f37e5b;
+   }
+}

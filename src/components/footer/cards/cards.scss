@@ -1,0 +1,17 @@
+@import "../../../assets/scss_styles/mixins";
+
+.cards {
+   display: flex;
+
+   @include _350 {
+      flex-direction: column;
+   }
+
+   .card {
+      height: 3.75rem;
+
+      & .card-img {
+         height: 100%;
+      }
+   }
+}

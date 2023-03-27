@@ -1,0 +1,31 @@
+@import "../../../assets/scss_styles/global-imports";
+
+.subscribe {
+   @include flex-center;
+   @include size_element($h, $w);
+
+   .subscribe-form {
+      width: 100%;
+      @include border($color_white);
+      @include flex-column;
+
+      .subscribe-input {
+         background: transparent;
+         @include border($color_white);
+
+         &:focus {
+            color: $color_white;
+         }
+      }
+
+      .subscribe-btn {
+         color: $color_white;
+         background: transparent;
+         @include border($color_white);
+
+         &:hover {
+            color: $color_gray;
+         }
+      }
+   }
+}

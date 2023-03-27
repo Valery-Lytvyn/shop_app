@@ -1,0 +1,15 @@
+@import '../../assets/scss_styles/global-imports';
+
+.footer {
+   background: $color_black;
+   width: 100%;
+   color: $color_gray;
+   font-family: $title_font;
+   flex: 0;
+   color: $color_orange;
+
+   .logo-img {
+      max-height: 3.75rem;
+      max-width: 7.5rem;
+   }
+}

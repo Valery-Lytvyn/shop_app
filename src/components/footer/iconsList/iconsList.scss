@@ -1,0 +1,22 @@
+@import "../../../assets/scss_styles/global-imports";
+
+.social-media-icons {
+   display: flex;
+
+   .social-icon {
+      font-size: 1.5rem;
+   }
+
+   .social-icon:hover {
+      color: $color_white;
+   }
+
+   @include _768 {
+      width: 100%;
+      justify-content: space-around;
+
+      .social-icon {
+         font-size: 2rem;
+      }
+   }
+}

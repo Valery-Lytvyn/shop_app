@@ -1,0 +1,8 @@
+@import '../../assets/scss_styles/mixins';
+
+.layout {
+   @include flex-column;
+   min-height: 100vh;
+   height: 100%;
+   width: 100%;
+}

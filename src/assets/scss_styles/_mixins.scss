@@ -1,0 +1,113 @@
+@mixin size_element($h: 100%, $w: 100%) {
+   height: $h;
+   width: $w;
+}
+
+@mixin border($color: #000, $thick: 1px, $border_style: solid) {
+   border-width: $thick;
+   border-color: $color;
+   border-style: $border_style;
+}
+
+
+
+@mixin position($position: absolute, $top: null, $right: null, $bottom: null, $left: null, $z-index: initial) {
+   position: $position;
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+   z-index: $z-index;
+}
+
+@mixin flex-column {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin flex-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flex-center-column {
+   @include flex-center;
+   flex-direction: column;
+}
+
+@mixin flex-center-vert {
+   display: flex;
+   align-items: center;
+}
+
+@mixin flex-center-horizontal {
+   display: flex;
+   justify-content: center;
+}
+
+@mixin font($f_family: false, $size: false, $color: false, $weight: false, $lh: false, ) {
+
+   @if $f_family {
+      font-family: $f_family;
+   }
+
+   @if $size {
+      font-size: $size;
+   }
+
+   @if $color {
+      color: $color;
+   }
+
+   @if $weight {
+      font-weight: $weight;
+   }
+
+   @if $lh {
+      line-height: $lh;
+   }
+}
+
+
+@mixin _1200 {
+   @media (max-width: 1200px) {
+      @content;
+   }
+}
+
+@mixin _1024 {
+   @media (max-width: 1024px) {
+      @content;
+   }
+}
+
+@mixin _992 {
+   @media (max-width: 991px) {
+      @content;
+   }
+}
+
+@mixin _768 {
+   @media (max-width: 768px) {
+      @content;
+   }
+}
+
+@mixin _576 {
+   @media (max-width: 576px) {
+      @content;
+   }
+}
+
+@mixin _450 {
+   @media (max-width: 450px) {
+      @content;
+   }
+}
+
+@mixin _350 {
+   @media (max-width: 350px) {
+      @content;
+   }
+}
