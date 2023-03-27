@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/shop_app/static/css/main.c3b7e7d3.css",
+    "main.js": "/shop_app/static/js/main.bb3a9e8b.js",
+    "static/media/banner_img2.webp": "/shop_app/static/media/banner_img2.940423fcc0866ddc159d.webp",
+    "static/media/banner_img3.webp": "/shop_app/static/media/banner_img3.f5c45e8084568f337942.webp",
+    "static/media/banner_img4.webp": "/shop_app/static/media/banner_img4.bc4ddcbc9c882c5a1c08.webp",
+    "static/media/banner_img1.webp": "/shop_app/static/media/banner_img1.b1060d91a20fc11582c2.webp",
+    "static/media/master_card.png": "/shop_app/static/media/master_card.4f1b5c2a217c41396613.png",
+    "static/media/bag-icon.png": "/shop_app/static/media/bag-icon.e69e2a41d2ef2b77dec7.png",
+    "static/media/visa_card.png": "/shop_app/static/media/visa_card.03d20fbc663e6cdf3e09.png",
+    "static/media/PayPal_card.png": "/shop_app/static/media/PayPal_card.d09f56cd5a267e03991d.png",
+    "index.html": "/shop_app/index.html",
+    "main.c3b7e7d3.css.map": "/shop_app/static/css/main.c3b7e7d3.css.map",
+    "main.bb3a9e8b.js.map": "/shop_app/static/js/main.bb3a9e8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3b7e7d3.css",
+    "static/js/main.bb3a9e8b.js"
+  ]
+}
